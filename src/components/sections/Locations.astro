@@ -1,0 +1,27 @@
+---
+import Location from "../cards/Location.astro";
+import Container from "../shared/Container.astro";
+import Paragraph from "../shared/Paragraph.astro";
+import Title from "../shared/Title.astro";
+
+---
+
+<section id="locations" class="mt-24">
+    <Container className="flex flex-col gap-10 lg:gap-12">
+        <div class="flex flex-col">
+            <Title>
+                We currently operate from 5 different locations with a mission to open at least 5 more in the next 5 years.
+            </Title>
+            <Paragraph className="mt-8">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, saepe aliquid autem alias vero distinctio dignissimos consequatur? Excepturi quibusdam, quam ipsum hic, laudantium ducimus suscipit, culpa facere consequuntur repellat delectus.
+            </Paragraph>
+            <div class="pt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-4 max-w-3xl md:max-w-[none]">
+                <Location description="Lorem ipsum dolor sit amet consectetur" image="/images/barbershop.jpeg" /> 
+                <Location description="Lorem ipsum dolor sit amet consectetur" image="/images/barbershop2.jpeg" />
+                <Location description="Lorem ipsum dolor sit amet consectetur" image="/images/barbershop3.jpeg" />
+                <Location description="Lorem ipsum dolor sit amet consectetur" image="/images/barbershop4.jpeg" />
+                <Location description="Lorem ipsum dolor sit amet consectetur" image="/images/barbershop5.jpeg" />
+            </div>
+        </div>
+    </Container>
+</section>

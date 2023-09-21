@@ -1,0 +1,21 @@
+---
+
+import Paragraph from '../shared/Paragraph.astro';
+
+export interface Props{
+    description:string,
+    image?: string
+}
+
+const {description, image} = Astro.props
+---
+<div class="m-auto p-5 sm:p-6 lg:p-8 rounded-3xl border border-box-border bg-box-bg shadow-lg shadow-box-shadow relative overflow-hidden">
+    <div class="w-full">
+        <img class="w-[full] h-[15rem]" src={image} alt="img">
+    </div>
+    <div class="mt-6 space-y-4 relative">
+        <Paragraph>
+            {description}
+        </Paragraph>
+    </div>
+</div>
